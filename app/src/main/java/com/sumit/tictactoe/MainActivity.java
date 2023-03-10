@@ -333,6 +333,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     int isGameOver(int x, int y){
+        //cpu
         if((arr[2][2]==0 && arr[0][0]==arr[1][1] && arr[0][0]=='O') || (arr[0][0]==0 && arr[2][2]==arr[1][1] && arr[2][2]=='O') || (arr[1][1]==0 && arr[0][0]==arr[2][2] && arr[0][0]=='O')){
             return arr[0][0]==0?11:arr[1][1]==0?22:33;
         }
@@ -356,6 +357,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        //user
         if((arr[2][2]==0 && arr[0][0]==arr[1][1] && arr[0][0]=='X') || (arr[0][0]==0 && arr[2][2]==arr[1][1] && arr[2][2]=='X') || (arr[1][1]==0 && arr[0][0]==arr[2][2] && arr[0][0]=='X')){
             return arr[0][0]==0?11:arr[1][1]==0?22:33;
         }
