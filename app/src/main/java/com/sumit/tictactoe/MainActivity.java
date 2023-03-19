@@ -382,7 +382,7 @@ public class MainActivity extends AppCompatActivity {
     }
     boolean GameOver(int x, int y){
         if(arr[x][0]!=0 && arr[x][0]==arr[x][1] && arr[x][1]==arr[x][2]){
-            return winning(x,1,x,1,x,2);
+            return winning(x,0,x,1,x,2);
         }
         if(arr[0][y]!=0 && arr[0][y]==arr[1][y] && arr[1][y]==arr[2][y]){
             return winning(0,y,1,y,2,y);
